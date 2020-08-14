@@ -7,6 +7,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
             <a class="nav-link" href="/index">Home</a>
+            <a class="nav-link" href="/lists">User List</a>
             <a class="nav-link" href="/create">Create</a>
           </div>
         </div>

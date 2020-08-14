@@ -20,6 +20,7 @@ Route::get('/', function () {
 
 Route::get('/index', 'PageController@index');
 Route::get('/create', 'PageController@createPage');
+Route::get('/lists', 'StudentController@displayUser');
 
 Route::post('/insert', 'StudentController@store');
 

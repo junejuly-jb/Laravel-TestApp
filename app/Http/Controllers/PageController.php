@@ -11,7 +11,8 @@ class PageController extends Controller
         return view('pages.index')->with('title', $title);
     }
 
-    public function create(){
+    public function createPage(){
         return view('pages.create');
     }
+
 }

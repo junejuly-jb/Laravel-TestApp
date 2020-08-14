@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Student;
 
 class StudentController extends Controller
 {
@@ -23,7 +24,7 @@ class StudentController extends Controller
      */
     public function create()
     {
-        //
+       
     }
 
     /**
@@ -34,7 +35,16 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'fname' => 'required',
+            'lname' => 'required'
+        ]);
+        $student = new Student([
+            'fname' => $request->get('fname'),
+            'lname' => $request->get('lname')
+        ]);
+        $student->save();
+        return redirect()->route('pages.index')->with('success', 'Data inserted!');
     }
 
     /**

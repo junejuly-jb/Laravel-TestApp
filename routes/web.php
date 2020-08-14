@@ -19,4 +19,11 @@ Route::get('/', function () {
 
 
 Route::get('/index', 'PageController@index');
-Route::get('/create', 'PageController@create');
+Route::get('/create', 'PageController@createPage');
+
+Route::post('/insert', 'StudentController@store');
+
+// Route::get('create', 'StudentController@create');
+// Route::post('student', 'StudentController@store');
+
+// Route::resource('pages', 'StudentController');

@@ -10,4 +10,8 @@ class PageController extends Controller
         $title = "Index";
         return view('pages.index')->with('title', $title);
     }
+
+    public function create(){
+        return view('pages.create');
+    }
 }

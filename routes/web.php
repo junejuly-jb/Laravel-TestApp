@@ -19,3 +19,4 @@ Route::get('/', function () {
 
 
 Route::get('/index', 'PageController@index');
+Route::get('/create', 'PageController@create');
